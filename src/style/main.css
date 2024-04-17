@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Segoe";
+  src: url("../assets/segoe.ttf");
+}
+
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-bg-darker: #e5e5e5;
+  --color-thumb: #c5c5c5;
+  --color-thumb-hover: #b1b1b1;
+  --color-navbar: #ffffff;
+  --color-text: #454545;
+}
+
+[data-theme="dark"] {
+  --color-bg: #181818;
+  --color-bg-darker: #000000;
+  --color-navbar: #000000;
+  --color-text: #ffffff;
+}
+
+::-webkit-scrollbar {
+  max-width: 15px;
+  width: 2vw;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-thumb);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-thumb-hover);
+}
+
+body {
+  font-family: "Segoe";
+  margin: 0px;
+  padding-left: 8vw;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h1, h2 {
+  margin-bottom: 2vh;
+}
+
+.thumbnail {
+  height: 30vh;
+}
