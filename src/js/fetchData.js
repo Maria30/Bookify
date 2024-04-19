@@ -1,13 +1,11 @@
 export function fetchData(id) {
   const apiUrl = `https://openlibrary.org${id}.json`;
-
   try {
     const response = fetch(apiUrl);
     if (!response.ok) {
       throw new Error('Réponse réseau non OK');
     }
     const data = response.json();
-    console.dir(data);
     return data;
   } 
   catch (error) {

@@ -17,6 +17,8 @@
   --color-bg-darker: #000000;
   --color-navbar: #000000;
   --color-text: #ffffff;
+  --color-thumb: #3a3a3a;
+  --color-thumb-hover: #5a5a5a;
 }
 
 ::-webkit-scrollbar {
@@ -43,6 +45,7 @@ body {
   padding-left: 8vw;
   background-color: var(--color-bg);
   color: var(--color-text);
+  transition: background-color 1.5s;
 }
 
 h1 {
@@ -58,6 +61,8 @@ h1, h2 {
   margin-bottom: 2vh;
 }
 
-.thumbnail {
-  height: 30vh;
+@media (max-width: 760px) {
+  body {
+    padding-right: 8vw;
+  }
 }

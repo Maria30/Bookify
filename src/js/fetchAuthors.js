@@ -13,20 +13,4 @@ export function fetchAuthors(key) {
     console.error('Erreur de requête API', error);
     throw error;
   }
-
-  // fetch(authorsUrl)
-  //   .then(response => {
-  //     if (!response.ok) {
-  //       throw new Error('Réponse réseau non OK');
-  //     }
-  //     return response.json();
-  //   })
-  //   .then(data => {
-  //     const author = data;
-  //     console.dir(author)
-  //     return author.name;
-  //   })
-  //   .catch(error => {
-  //     console.error('Erreur de requête API', error);  
-  //   });
 }

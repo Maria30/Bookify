@@ -54,9 +54,6 @@ export default {
         .then(data => {
           this.booksData = data.docs;
           this.booksData = this.booksData.filter(book => book.cover_i);
-
-          console.dir(this.booksData)
-          console.dir(getCover(this.booksData[0].cover_i))
         })
         .catch(error => {
           console.error('Erreur de requête API', error);  

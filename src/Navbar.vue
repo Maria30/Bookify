@@ -64,13 +64,6 @@ export default {
     cursor: pointer;
   }
 
-  .light_dark_mode {
-    /* height: 50px;
-    width: 50px;
-    padding: 10px; */
-    
-  }
-
   #navbar {
     background-color: var(--color-navbar);
     display: flex;
@@ -84,6 +77,7 @@ export default {
     width: fit-content;
     border-right: 2px solid var(--color-bg-darker);
     z-index: 20;
+    transition: background-color 1.5s;
   }
 
   @media (max-width: 760px) {
