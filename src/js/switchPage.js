@@ -1,4 +1,4 @@
 export function switchPage(page) {
-  sessionStorage.setItem('active', page);
+  localStorage.setItem('active', page);
   location.reload();
 }

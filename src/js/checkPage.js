@@ -1,3 +1,3 @@
 export function checkPage(value) {
-  return sessionStorage.getItem('active') == value;
+  return localStorage.getItem('active') == value;
 }
